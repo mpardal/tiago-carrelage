@@ -3,33 +3,45 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Tiago Carrelage - Page principal">
 	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
+		<h1>Bienvenu sur le site de <span class="text-gradient">Tiago Carrelage</span></h1>
 		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
+			Nous intervenons sur les villes de Bordeaux,
+			et son périphérique (Bègles, Pessac, Talence, Villenave d'Ornon...)
+			<br /><br/>
+			<strong>Travaux :</strong> intérieur, extérieur, sanitaire, mural.
 		</p>
 		<ul role="list" class="link-card-grid">
 			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
+				href="#"
+				title="Intérieur"
+				body="Vous retrouverez par ce lien, les différents travaux d'intérieur."
 			/>
 			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
+				href="#"
+				title="Extérieur"
+				body="Vous retrouverez par ce lien, les différents travaux d'extérieur."
 			/>
 			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
+				href="#"
+				title="Sanitaire"
+				body="Vous retrouverez par ce lien, les différents travaux de sanitaire."
 			/>
 			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
+				href="#"
+				title="Mural"
+				body="Vous retrouverez par ce lien, les différents travaux muraux."
+			/>
+			<Card
+				href="#"
+				title="Matériaux"
+				body="Vous retrouverez par ce lien, les différents matériaux que j'utilise."
+			/>
+			<Card
+				href="/contact"
+				title="Coordonnées & Devis"
+				body="Vous pouvez me contacter en allant sur ce lien.️"
 			/>
 		</ul>
 	</main>
