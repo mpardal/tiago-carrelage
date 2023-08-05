@@ -1,11 +1,12 @@
 ---
 export interface Props {
 	title: string;
-	body: string;
+	altImg: string;
 	href: string;
+	img: string
 }
 
-const { href, title, body } = Astro.props;
+const { href, title,img, altImg } = Astro.props;
 ---
 
 <li class="link-card">
@@ -14,9 +15,7 @@ const { href, title, body } = Astro.props;
 			{title}
 			<span>&rarr;</span>
 		</h2>
-		<p>
-			{body}
-		</p>
+		<img src={img} alt={altImg}>
 	</a>
 </li>
 <style>

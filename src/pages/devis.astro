@@ -1,0 +1,34 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+<Layout title="Tiago Carrelage - Demande de devis">
+    <form>
+        <section>
+            <div>
+                <label for="firstname">Prénom :</label>
+                <input type="text" id="firstname" required>
+            </div>
+            <div>
+                <label for="lastname">Nom :</label>
+                <input type="text" id="lastname" required>
+            </div>
+        </section>
+        <section>
+            <div>
+                <label for="numberPhone">Numéro de téléphone :</label>
+                <input type="number" id="numberPhone" required>
+            </div>
+            <div>
+                <label for="email">Adresse mail :</label>
+                <input type="email" id="email" required>
+            </div>
+        </section>
+        <section>
+            <label for="info">Informations complémentaires :</label>
+            <input type="text" id="info">
+        </section>
+        <section>
+            <input type="submit" value="Envoyer">
+        </section>
+    </form>
+</Layout>

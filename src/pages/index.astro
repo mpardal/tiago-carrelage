@@ -3,8 +3,29 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 ---
 
-<Layout title="Tiago Carrelage - Page principal">
-	<main class="container mx-auto">
-		<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto aut cum illum ipsam libero maxime minima molestias, nam necessitatibus numquam possimus quisquam quo rerum sapiente sint soluta suscipit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet asperiores, debitis delectus dignissimos dolorem et exercitationem fugiat impedit ipsa labore laborum minus necessitatibus, obcaecati placeat quas quisquam rerum, saepe.</p>
-	</main>
+<Layout title="Tiago Carrelage - Page principal" titlePage="Tiago Carrelage, carreleur à Bordeaux">
+		<h2>Travaux et rénovation de carrelage (intérieur et extérieur) sur la Gironde</h2>
+		<section>
+			<div>
+				<p>
+					L'entreprise Tiago Carrelage est situé à Villenave d'Ornon, dans la Gironde.
+				</p>
+				<p>
+					Nous intervenons sur du carrelage intérieure (cuisine, salle de bain...) mais aussi extérieure, nous faisons également des terasses
+					en création et rénovation ainsi que des encadrements de piscine.
+				</p>
+				<p>
+					Nous possédons un savoir-faire confirmé et un grand professionnalisme pour vous assurer des travaux de qualité.
+				</p>
+				<p>
+					Nous écoutons votre besoin, et mettons tout en place afin de satisfaire votre souhait.
+				</p>
+			</div>
+			<img src="#" alt="image de prestation en action">
+		</section>
+		<section class="flex flex-row justify-around">
+			<Card href="#" title="Carrelage" altImg="image de carrelage" src="#"/>
+			<Card href="#" title="Terasse" altImg="image de terrasse" src="#"/>
+			<Card href="#" title="Salle de bain" altImg="image de sdb" src="#"/>
+		</section>
 </Layout>
