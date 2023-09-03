@@ -24,7 +24,7 @@ const { title, titlePage } = Astro.props;
 	<body class="m-0 h-screen">
 	<Header />
 	<main class="container mx-auto">
-		<h1>{titlePage}</h1>
+		<h1 class="text-xl text-center font-bold py-3 md:text-2xl ">{titlePage}</h1>
 		<slot />
 		<BottomPage />
 	</main>

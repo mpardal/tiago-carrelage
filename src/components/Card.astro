@@ -9,8 +9,8 @@ export interface Props {
 const { href, title,img, altImg } = Astro.props;
 ---
 
-<li class="link-card">
-	<a href={href}>
+<li class="link-card mx-2">
+	<a href={href} class="flex flex-row justify-around items-center md:flex-col md:gap-3 md:justify-center">
 		<h2>
 			{title}
 			<span>&rarr;</span>

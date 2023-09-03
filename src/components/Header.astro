@@ -2,28 +2,68 @@
 
 ---
 
-<header>
-    <img src="#" alt="logo" width="100">
-    <nav>
-        <ul>
-            <li>
+<style>
+    .burger {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+    }
+
+    .burger #myLinks {
+        display: none;
+    }
+
+    .burger a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+
+    .burger a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .burger a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+</style>
+
+
+<!-- TODO:  Faire le menu burger -->
+
+<header class="md:flex md:flex-row md:justify-between md:mx-4 md:py-3 burger">
+    <img src="#" alt="logo" width="100" class="py-3">
+    <nav class="md:p-3 md:mr-20 ">
+        <div class="md:flex md:flex-row md:gap-5 text-center" id="myLinks">
                 <a href="/">Accueil</a>
-            </li>
-            <li>
                 <a href="/interieur/">Intérieur</a>
-            </li>
-            <li>
                 <a href="/exterieur/">Extérieur</a>
-            </li>
-            <li>
                 <a href="/sdb/">Salle de bain</a>
-            </li>
-            <li>
                 <a href="/realisations/">Quelques réalisations</a>
-            </li>
-            <li>
                 <a href="/devis/">Devis/Renseignements</a>
-            </li>
-        </ul>
+        </div>
+        <a class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
     </nav>
 </header>
+
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
+
