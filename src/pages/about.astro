@@ -1,6 +1,9 @@
 ---
 
-import Layout from "../layouts/Layout.astro";---
+import Layout from "../layouts/Layout.astro";
+import img from "../../public/sdb-test.jpeg";
+
+---
 
 <Layout title="Tiago Carrelage - Quelques réalisations" titlePage="Quelques réalisations de la société Tiago Carrelage">
     Tiago Carrelage est basée à Villenave d'Ornon et exerce sur Bordeaux et ses alentours.
@@ -15,14 +18,14 @@ import Layout from "../layouts/Layout.astro";---
     <div>
         <p>Salle de bains</p>
         <a>
-            <img>
+            <img alt="salle de bains" src={img}>
         </a>
     </div>
 
     <div>
         <p>Terrasses et Carrelage extérieur (entourage de piscine ou parterre de jardins)</p>
         <a>
-            <img>
+            <img alt="Extérieur" src={img}>
         </a>
     </div>
     <!-- Image + lien -->
@@ -30,7 +33,7 @@ import Layout from "../layouts/Layout.astro";---
     <div>
         <p>Et de la faïence ou du carrelage intérieur (cuisine et sol)</p>
         <a>
-            <img>
+            <img alt="Intérieur" src={img}>
         </a>
     </div>
 

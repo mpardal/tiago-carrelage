@@ -6,16 +6,16 @@ export interface Props {
 	img: string
 }
 
-const { href, title,img, altImg } = Astro.props;
+const { href, title,src, altImg } = Astro.props;
 ---
 
 <li class="link-card mx-2">
-	<a href={href} class="flex flex-row justify-around items-center md:flex-col md:gap-3 md:justify-center">
+	<a href={href} class="flex justify-around items-center flex-col gap-3">
 		<h2>
 			{title}
 			<span>&rarr;</span>
 		</h2>
-		<img src={img} alt={altImg}>
+		<img src={src} alt={altImg}>
 	</a>
 </li>
 <style>

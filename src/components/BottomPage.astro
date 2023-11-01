@@ -1,14 +1,15 @@
 ---
 
 import Card from "./Card.astro";
+import img from "../../public/sdb-test.jpeg";
 
 ---
 
 <section>
-    <p class="text-lg mt-5 ml-3 underline">Nos différentes prestations :     </p>
-    <div class="flex flex-col gap-2 ">
-        <Card href="/interieur/" title="Intérieur" altImg="image de prestation intérieur" src="#"/>
-        <Card href="/exterieur/" title="Extérieur" altImg="image de de prestation extérieur" src="#"/>
-        <Card href="/sdb/" title="Salle de bain" altImg="image de prestations de salle de bains" src="#"/>
+    <p class="text-lg mt-5 ml-3 underline">Nos différentes prestations :</p>
+    <div class="flex flex-column gap-1 mx-3">
+        <Card href="/interieur/" title="Intérieur" altImg="image de prestation intérieur" src={img}/>
+        <Card href="/exterieur/" title="Extérieur" altImg="image de de prestation extérieur" src={img}/>
+        <Card href="/sdb/" title="Salle de bain" altImg="image de prestations de salle de bains" src={img}/>
     </div>
 </section>

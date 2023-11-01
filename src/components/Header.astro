@@ -1,69 +1,64 @@
 ---
 
+import { Astronav, MenuItems, MenuIcon,  Dropdown, DropdownItems } from "astro-navbar";
+
 ---
 
-<style>
-    .burger {
-        overflow: hidden;
-        background-color: #333;
-        position: relative;
-    }
-
-    .burger #myLinks {
-        display: none;
-    }
-
-    .burger a {
-        color: white;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-        display: block;
-    }
-
-    .burger a.icon {
-        background: black;
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
-    .burger a:hover {
-        background-color: #ddd;
-        color: black;
-    }
-</style>
-
-
-<!-- TODO:  Faire le menu burger -->
-
-<header class="md:flex md:flex-row md:justify-between md:mx-4 md:py-3 burger">
-    <img src="#" alt="logo" width="100" class="py-3">
-    <nav class="md:p-3 md:mr-20 ">
-        <div class="md:flex md:flex-row md:gap-5 text-center" id="myLinks">
-                <a href="/">Accueil</a>
-                <a href="/interieur/">Intérieur</a>
-                <a href="/exterieur/">Extérieur</a>
-                <a href="/sdb/">Salle de bain</a>
-                <a href="/realisations/">Quelques réalisations</a>
-                <a href="/devis/">Devis/Renseignements</a>
+<header class="lg:flex p-5  gap-5">
+    <Astronav>
+        <div class="flex w-full justify-between">
+            <a>Your Logo</a>
+            <div class="block lg:hidden">
+                <MenuIcon class="w-4 h-4 text-gray-800" />
+            </div>
         </div>
-        <a class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </nav>
+        <MenuItems class="hidden lg:flex">
+            <ul class="flex flex-col lg:flex-row lg:gap-5">
+                <li>
+                    <a href="/">Accueil</a>
+                </li>
+                <li>
+                    <a href="/about/">About</a>
+                </li>
+                <li>
+                    <Dropdown class="group">
+                        <button class="flex items-center">
+                            <span> Prestations </span>
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="3"
+                                    stroke="currentColor"
+                                    class="w-3 h-3 mt-0.5 group-open:rotate-180">
+                                <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
+                            </svg>
+                        </button>
+                        <DropdownItems class="relative">
+                            <div class="absolute top-0">
+                                <ul>
+                                    <li>
+                                        <a href="/interieur/">Intérieur</a>
+                                    </li>
+                                    <li>
+                                        <a href="/exterieur/">Extérieur</a>
+                                    </li>
+                                    <li>
+                                        <a href="/sdb/">Salle de bain</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </DropdownItems>
+                    </Dropdown>
+                </li>
+                <li>
+                    <a href="/devis/">Contact</a>
+                </li>
+            </ul>
+        </MenuItems>
+    </Astronav>
 </header>
-
-
-<script>
-    function myFunction() {
-        var x = document.getElementById("myLinks");
-        if (x.style.display === "block") {
-            x.style.display = "none";
-        } else {
-            x.style.display = "block";
-        }
-    }
-</script>
 
