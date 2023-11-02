@@ -4,10 +4,10 @@ import { Astronav, MenuItems, MenuIcon,  Dropdown, DropdownItems } from "astro-n
 
 ---
 
-<header class="lg:flex p-5  gap-5">
+<header class="lg:flex p-5 gap-5 bg-gray-300">
     <Astronav>
         <div class="flex w-full justify-between">
-            <a>Your Logo</a>
+            <h1 class="text-xl text-center font-bold md:text-2xl ">Tiago Carrelage</h1>
             <div class="block lg:hidden">
                 <MenuIcon class="w-4 h-4 text-gray-800" />
             </div>
@@ -18,7 +18,7 @@ import { Astronav, MenuItems, MenuIcon,  Dropdown, DropdownItems } from "astro-n
                     <a href="/">Accueil</a>
                 </li>
                 <li>
-                    <a href="/about/">About</a>
+                    <a href="/about/">Réalisations</a>
                 </li>
                 <li>
                     <Dropdown class="group">
@@ -38,16 +38,16 @@ import { Astronav, MenuItems, MenuIcon,  Dropdown, DropdownItems } from "astro-n
                             </svg>
                         </button>
                         <DropdownItems class="relative">
-                            <div class="absolute top-0">
-                                <ul>
+                            <div class="absolute top-0 bg-gray-300">
+                                <ul class="p-2">
                                     <li>
-                                        <a href="/interieur/">Intérieur</a>
+                                        <a href="/interieur/" class="text-xs">Intérieur</a>
                                     </li>
                                     <li>
-                                        <a href="/exterieur/">Extérieur</a>
+                                        <a href="/exterieur/" class="text-xs">Extérieur</a>
                                     </li>
                                     <li>
-                                        <a href="/sdb/">Salle de bain</a>
+                                        <a href="/sdb/" class="text-xs">Salle de bain</a>
                                     </li>
                                 </ul>
                             </div>
@@ -55,7 +55,7 @@ import { Astronav, MenuItems, MenuIcon,  Dropdown, DropdownItems } from "astro-n
                     </Dropdown>
                 </li>
                 <li>
-                    <a href="/devis/">Contact</a>
+                    <a href="/contact/">Contact</a>
                 </li>
             </ul>
         </MenuItems>

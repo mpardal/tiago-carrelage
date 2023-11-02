@@ -1,15 +1,20 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
 import Carousel from "../components/Carousel.astro";
 ---
 
-<Layout title="Tiago Carrelage - Intérieur" titlePage="Réalisation de carrelage intérieur (sol & faïence)">
-<h2 class="ml-10">Nos réalisations d'intérieur</h2>
-    <h3 class="ml-5">Prestations de cuisine</h3>
-    <Carousel />
-    <h3 class="ml-5">Prestations de sol</h3>
-    <Carousel />
-    <h3 class="ml-5">Prestations de faïences</h3>
-    <Carousel />
+<Layout title="Tiago Carrelage - Intérieur" titlePage="Réalisation de carrelage intérieur">
+<h2 class="text-xl my-3">Nos réalisations d'intérieur</h2>
+    <section class="my-5">
+        <h3 class="ml-4 mb-3">Prestations de cuisine</h3>
+        <Carousel />
+    </section>
+    <section class="my-5">
+        <h3 class="ml-4 mb-3 mt-5">Prestations de sol</h3>
+        <Carousel />
+    </section>
+    <section class="my-5 pb-8">
+        <h3 class="ml-4 mb-3 mt-5">Prestations de faïences</h3>
+        <Carousel />
+    </section>
 </Layout>

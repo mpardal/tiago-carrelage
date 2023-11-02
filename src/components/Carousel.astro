@@ -1,5 +1,5 @@
 ---
-
+import img from "../../public/sdb-test.jpeg";
 ---
 
 <style>
@@ -9,7 +9,7 @@
 
     .carousel__item {
         height: 300px;
-        background: #b2b6b2;
+        background: #e3e3e3;
         padding: 1em;
         font-family: "Quicksand", sans-serif;
         font-weight: bold;
@@ -35,29 +35,37 @@
         width: 10px;
         height: 10px;
         display: inline-block;
-        background: #3a599a;
+        background: #6780b4;
         border-radius: 50%;
         margin: 0 5px;
         cursor: pointer;
     }
 
     .carousel__button--selected {
-        background: #1e35a6;
+        background: #a68b1e;
     }
 </style>
 
-    <div class="carousel mx-4"><!-- class => carousel -->
-        <div class="carousel__item">Photo 1</div><!-- class => carousel__item -->
-        <div class="carousel__item">Photo 2</div><!-- class => carousel__item -->
-        <div class="carousel__item">Photo 3</div><!-- class => carousel__item -->
-        <div class="carousel__item">Photo 4</div><!-- class => carousel__item -->
-        <div class="carousel__nav">
-            <span class="carousel__button"></span>
-            <span class="carousel__button"></span>
-            <span class="carousel__button"></span>
-            <span class="carousel__button"></span>
-        </div>
+<div class="carousel mx-4"><!-- class => carousel -->
+    <div class="carousel__item">
+        <img alt="..." src={img} width="150" class="mx-auto">
+    </div><!-- class => carousel__item -->
+    <div class="carousel__item">
+        <img alt="..." src={img} width="150" class="mx-auto">
+    </div><!-- class => carousel__item -->
+    <div class="carousel__item">
+        <img alt="..." src={img} width="150" class="mx-auto">
+    </div><!-- class => carousel__item -->
+    <div class="carousel__item">
+        <img alt="..." src={img} width="150" class="mx-auto">
+    </div><!-- class => carousel__item -->
+    <div class="carousel__nav">
+        <span class="carousel__button"></span>
+        <span class="carousel__button"></span>
+        <span class="carousel__button"></span>
+        <span class="carousel__button"></span>
     </div>
+</div>
 
 <script>
     document.querySelectorAll(".carousel").forEach((carousel) => {
@@ -86,4 +94,5 @@
         buttons[0].classList.add("carousel__button--selected");
     });
 </script>
+
 

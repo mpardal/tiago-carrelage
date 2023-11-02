@@ -5,36 +5,29 @@ import img from "../../public/sdb-test.jpeg";
 
 ---
 
-<Layout title="Tiago Carrelage - Quelques réalisations" titlePage="Quelques réalisations de la société Tiago Carrelage">
-    Tiago Carrelage est basée à Villenave d'Ornon et exerce sur Bordeaux et ses alentours.
+<Layout title="Tiago Carrelage - Quelques réalisations" titlePage="Quelques réalisations">
+    <h2 class="text-xl my-3">Tiago Carrelage est basée à Villenave d'Ornon et exerce sur Bordeaux et ses alentours.</h2>
 
-    <p>
+    <p class="py-3 text-justify">
         Artisan carreleur sur la Gironde depuis quelques années, nous ont apporté une expérience et un savoir-faire remarquable.
         Ces points nous permettront de vous accompagner sur vos projets et vous apportez tous les conseils nécessaires.
     </p>
-    <p>Notre objectif principal est d’effectuer un travail de qualité et soigné, mais aussi la satisfaction client.</p>
-    <p>Nous faisons plusieurs types de réalisations, en neuf et rénovation :</p>
+    <p class="py-3 text-justify">Notre objectif principal est d’effectuer un travail de qualité et soigné, mais aussi la satisfaction client.</p>
+    <p class="py-3 text-justify">Nous faisons plusieurs types de réalisations, en neuf et rénovation :</p>
 
-    <div>
-        <p>Salle de bains</p>
-        <a>
-            <img alt="salle de bains" src={img}>
-        </a>
-    </div>
-
-    <div>
-        <p>Terrasses et Carrelage extérieur (entourage de piscine ou parterre de jardins)</p>
-        <a>
+    <section class="flex flex-row">
+        <div class="m-2">
+            <p class="text-center mb-3 font-bold">Terrasse et Carrelage extérieur</p>
             <img alt="Extérieur" src={img}>
-        </a>
-    </div>
-    <!-- Image + lien -->
-
-    <div>
-        <p>Et de la faïence ou du carrelage intérieur (cuisine et sol)</p>
-        <a>
+        </div>
+        <div class="m-2">
+            <p class="text-center mb-3 font-bold">Salle de bain</p>
+            <img alt="salle de bains" src={img}>
+        </div>
+        <div class="m-2">
+            <p class="text-center mb-3 font-bold">Faïence ou Carrelage intérieur</p>
             <img alt="Intérieur" src={img}>
-        </a>
-    </div>
+        </div>
+    </section>
 
 </Layout>
